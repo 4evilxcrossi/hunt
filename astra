@@ -3,7 +3,7 @@ dd="$(date)"
 echo "| Developed by 4evil x crossi    |" | lolcat
 echo "ENTER PASSWORD to UNLOCK" | lolcat
 read pass
-if [ $pass == GRSXM2LMBI======Y3Jvc3NpCg== ];then
+if [ $pass == devilisalive ];then
 echo "|################################|" | lolcat
 echo "| TEAM-VENOM [JAI-MAHAKAL]       |" | lolcat
 echo "| Developed by 4evil x crossi    |" | lolcat
