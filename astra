@@ -51,7 +51,7 @@ read sqld
 mind="sqlmap -g $sqld --tor level 3 --risk 5 --dump-all"
 $mind
 echo ":),ok bye now." |lolcat
-elif [ $pro -eq 3 ];then
+elif [ $pro -eq 4 ];then
 echo "THIS IF FULLY AUTOMATE AND WILL TAKE FEW MORE TIME, as it will scan each aspects that hunter do manually but you need to confim the vulnerbility founded during scan" | lolcat 
 echo "Enter target //https://website.com//" | lolcat 
 read codex
