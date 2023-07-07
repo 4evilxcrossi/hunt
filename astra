@@ -5,9 +5,9 @@ echo "ENTER PASSWORD to UNLOCK" | lolcat
 read pass
 if [ $pass == devilisalive ];then
 echo "|################################|" | lolcat
-echo "| TEAM-VENOM [JAI-MAHAKAL]       |" | lolcat
+echo "| TEAM-VENOM                     |" | lolcat
 echo "| Developed by 4evil x crossi    |" | lolcat
-echo "| $dd|" | lolcat
+echo "| $dd|"                          | lolcat
 echo "|################################|" | lolcat
 echo "                                  "
 echo "--------------------------------------------------"|lolcat
